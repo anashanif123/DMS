@@ -5,22 +5,21 @@ import Image from "next/image";
 import { AccessTimeFilledOutlined, LocalHospital, WcOutlined } from "@mui/icons-material";
 import { DollarSignIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DatePicker } from "@/components/Datepicker";
 
 export default function DoctorDetail({params}) {
 
     const SingleDoctorInfo = doctors.find((doctor)=>doctor.id == params.id);
     return(
-        <div className="min-h-screen">
-  <div className="container  py-10 mx-auto">
-    <div className="lg:w-4/5 mx-auto flex flex-wrap">
-      <div  className="lg:w-1/2 relative w-full lg:h-auto h-64 object-cover object-center rounded">
-
-      <Image
-        alt="ecommerce"
-        fill={true}
-        src="https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-      </div>
+       <div className="min-h-screen">
+      <div className="container  py-10 mx-auto">
+        <div className="lg:w-4/5 mx-auto flex flex-wrap">
+          <div className="lg:w-1/2 relative w-full lg:h-auto h-64 object-cover object-center rounded">
+            <Image
+              fill={true}
+              src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?cs=srgb&dl=pexels-pixabay-356040.jpg&fm=jpg"
+            />
+          </div>
       <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h2 className="text-sm title-font text-gray-500 tracking-widest">
           {SingleDoctorInfo.category}
@@ -172,6 +171,7 @@ export default function DoctorDetail({params}) {
                 </div>
                 <h1>{SingleDoctorInfo.fees}</h1>
               </div>
+              <DatePicker/>
               <Button className="w-full my-2">
                 Book Your Apointement
               </Button>

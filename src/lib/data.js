@@ -215,4 +215,135 @@ export  const categories = [
     }
   ];
   
-  
+  export const appointments = [
+  {
+    user: {
+      name: "Alice Johnson",
+      email: "alice.johnson@example.com"
+    },
+    appointmentTime: "9:15 AM",
+    status: "Confirmed",
+    appointmentDate: "2024-11-10",
+    doctor: {
+      name: "Dr. John Smith",
+      hospital: "City Heart Hospital"
+    }
+  },
+  {
+    user: {
+      name: "Bob Martinez",
+      email: "bob.martinez@example.com"
+    },
+    appointmentTime: "10:00 AM",
+    status: "Pending",
+    appointmentDate: "2024-11-11",
+    doctor: {
+      name: "Dr. Sarah Johnson",
+      hospital: "Skin Care Clinic"
+    }
+  },
+  {
+    user: {
+      name: "Catherine Brown",
+      email: "catherine.brown@example.com"
+    },
+    appointmentTime: "8:45 AM",
+    status: "Cancelled",
+    appointmentDate: "2024-11-09",
+    doctor: {
+      name: "Dr. Emily Brown",
+      hospital: "Metabolic Health Center"
+    }
+  },
+  {
+    user: {
+      name: "David Lee",
+      email: "david.lee@example.com"
+    },
+    appointmentTime: "1:30 PM",
+    status: "Confirmed",
+    appointmentDate: "2024-11-08",
+    doctor: {
+      name: "Dr. Michael Davis",
+      hospital: "Gastro Health Clinic"
+    }
+  },
+  {
+    user: {
+      name: "Emma Wilson",
+      email: "emma.wilson@example.com"
+    },
+    appointmentTime: "10:45 AM",
+    status: "Pending",
+    appointmentDate: "2024-11-12",
+    doctor: {
+      name: "Dr. Linda Wilson",
+      hospital: "Blood Health Institute"
+    }
+  },
+  {
+    user: {
+      name: "Frank Garcia",
+      email: "frank.garcia@example.com"
+    },
+    appointmentTime: "9:15 AM",
+    status: "Confirmed",
+    appointmentDate: "2024-11-13",
+    doctor: {
+      name: "Dr. James Garcia",
+      hospital: "Kidney Care Hospital"
+    }
+  },
+  {
+    user: {
+      name: "Grace Martinez",
+      email: "grace.martinez@example.com"
+    },
+    appointmentTime: "2:15 PM",
+    status: "Cancelled",
+    appointmentDate: "2024-11-07",
+    doctor: {
+      name: "Dr. Patricia Martinez",
+      hospital: "Neuro Center"
+    }
+  },
+  {
+    user: {
+      name: "Henry Rodriguez",
+      email: "henry.rodriguez@example.com"
+    },
+    appointmentTime: "11:30 AM",
+    status: "Confirmed",
+    appointmentDate: "2024-11-14",
+    doctor: {
+      name: "Dr. Robert Rodriguez",
+      hospital: "Cancer Care Institute"
+    }
+  },
+  {
+    user: {
+      name: "Isabella Lee",
+      email: "isabella.lee@example.com"
+    },
+    appointmentTime: "1:15 PM",
+    status: "Pending",
+    appointmentDate: "2024-11-15",
+    doctor: {
+      name: "Dr. Jennifer Lee",
+      hospital: "Eye Vision Hospital"
+    }
+  },
+  {
+    user: {
+      name: "Jack Anderson",
+      email: "jack.anderson@example.com"
+    },
+    appointmentTime: "3:30 PM",
+    status: "Confirmed",
+    appointmentDate: "2024-11-16",
+    doctor: {
+      name: "Dr. William Anderson",
+      hospital: "Bone & Joint Hospital"
+    }
+  },
+];

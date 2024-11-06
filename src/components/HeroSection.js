@@ -24,9 +24,11 @@ export default function Hero() {
           Find Doctor You Need
         </Button>
         </Link>
+        <Link href={"/doctors/apply"}>
         <Button >
           Apply As Doctor
         </Button>
+        </Link>
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-end">

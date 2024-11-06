@@ -100,7 +100,7 @@ export default function DoctorSection({ isHome }) {
               <Link href={`/doctors/${doctor.id}`}>
               
               <Button >
-                Book Appointement
+                See Detail
               </Button>
               </Link>
             </CardFooter>
