@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { auth } from "../../auth";
 
-export default function Hero() {
-    return(
+export default async function Hero() {
+  const session =await auth();  
+  return(
         <section className="text-gray-600 my-10 body-font">
   <div className="container mx-auto flex  md:flex-row flex-col items-center">
     <div className="lg:flex-grow md:w-3/4  md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -24,7 +26,7 @@ export default function Hero() {
           Find Doctor You Need
         </Button>
         </Link>
-        <Link href={"/doctors/apply"}>
+        <Link href={session ? "/doctors/apply" : "/signin"}>
         <Button >
           Apply As Doctor
         </Button>

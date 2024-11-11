@@ -16,7 +16,6 @@ export default async function SigniIn() {
         }}
       >
         <Button>
-          {" "}
           <Google /> Continue With Google
         </Button>
       </form>
