@@ -15,6 +15,7 @@ export async function POST(req) {
         {
           error: true,
           msg: "You had already applied as a doctor",
+        
         },
         { status: 403 }
       );
@@ -22,13 +23,18 @@ export async function POST(req) {
 
     let newRequest = await new RequestModal({ ...obj });
     newRequest = await newRequest.save();
+    console.log("request registerd ", newRequest);
 
     return Response.json(
       {
         error: false,
         msg: "Request Registered Successfully",
+        
+        
         request: newRequest,
       },
+
+      
       { status: 201 }
     );
   } catch (e) {
