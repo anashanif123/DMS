@@ -14,7 +14,7 @@ export async function POST(req) {
       return Response.json(
         {
           error: true,
-          msg: "You had already applied as a doctor",
+          msg: "You had already applied as a doctor before",
         
         },
         { status: 403 }
